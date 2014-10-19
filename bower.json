@@ -1,0 +1,31 @@
+{
+    "name": "clever-form-demo-app",
+    "version": "0.0.0",
+    "authors": [
+        "rsamec <roman.samec2@gmail.com>"
+    ],
+    "description": "the fastest way to create interactive forms",
+    "main": "index.html",
+    "license": "MIT",
+    "dependencies": {
+        "polymer": "latest",
+        "core-header-panel": "polymer/core-header-panel#~0.4.2",
+        "core-toolbar": "polymer/core-toolbar#~0.4.2",
+        "paper-input": "polymer/paper-input#~0.4.2",
+        "paper-radio-group": "polymer/paper-radio-group#~0.4.2",
+        "paper-checkbox": "polymer/paper-checkbox#~0.4.2",
+        "paper-toast": "polymer/paper-toast#~0.4.2",
+        "paper-fab": "polymer/paper-fab#~0.4.2",
+        "core-localstorage": "polymer/core-localstorage#~0.4.2",
+        "clever-paper-input": "*",
+        "clever-core-list": "*",
+        "clever-rule-service": "*"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

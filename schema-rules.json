@@ -1,0 +1,60 @@
+{
+    "Person": {
+        "type": "object",
+        "properties": {
+            "FirstName": {
+                "type": "string",
+                "title": "First name",
+                "required": "true",
+                "maxLength": "15"
+            },
+            "LastName": {
+                "type": "string",
+                "title": "Last name",
+                "required": "true",
+                "maxLength": "15"
+            },
+            "Contact": {
+                "type": "object",
+                "properties": {
+                    "Email": {
+                        "type": "string",
+                        "title": "Email",
+                        "required": "true",
+                        "maxLength": 100,
+                        "email": "true"
+                    }
+                }
+            }
+        }
+    },
+    "Hobbies": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "HobbyName": {
+                    "type": "string",
+                    "title": "HobbyName",
+                    "required": "true",
+                    "maxLength": 100
+                },
+                "Frequency": {
+                    "type": "string",
+                    "title": "Frequency",
+                    "enum": ["Daily", "Weekly", "Monthly"]
+                },
+                "Paid": {
+                    "type": "boolean",
+                    "title": "Paid"
+                },
+                "Recommedation": {
+                    "type": "boolean",
+                    "title": "Recommedation"
+                }
+            }
+        },
+        "maxItems": 4,
+        "minItems": 2
+    }
+}
